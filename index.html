@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BIOGLOW 台灣生物多樣性地圖</title>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+    <h1>🌿 BIOGLOW 台灣生物多樣性互動地圖</h1>
+
+    <div class="topbar">
+
+        <input
+        type="text"
+        id="search"
+        placeholder="搜尋生物或縣市">
+
+        <button>搜尋</button>
+
+    </div>
+
+</header>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <h2>生態系</h2>
+
+        <button>🌲 森林</button>
+
+        <button>🌊 海洋</button>
+
+        <button>🦆 濕地</button>
+
+        <button>⛰️ 高山</button>
+
+        <button>全部</button>
+
+    </aside>
+
+    <main>
+
+        <div id="map"></div>
+
+    </main>
+
+    <aside class="info">
+
+        <h2>生物資訊</h2>
+
+        <img id="photo"
+        src="https://upload.wikimedia.org/wikipedia/commons/6/63/Formosan_black_bear.jpg"
+        width="100%">
+
+        <h3 id="name">請點選地圖</h3>
+
+        <p id="intro">
+        點選縣市或生物後，
+        這裡會顯示介紹。
+        </p>
+
+        <hr>
+
+        <h2>SPIKE 感測資料</h2>
+
+        <p>🌡️ 溫度：25°C</p>
+
+        <p>💧 濕度：60%</p>
+
+        <p>☀️ 光照：350 lux</p>
+
+        <p>🌿 BIOGLOW：85 分</p>
+
+    </aside>
+
+</div>
+
+<footer>
+
+FLL 2026 BIOGLOW © Team
+
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
